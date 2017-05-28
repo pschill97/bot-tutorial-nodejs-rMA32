@@ -97,7 +97,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/xfl666/rules");
+    postMessage("https://docs.google.com/document/d/1ysNakmBBmV3h2UaIA04laQMjCK1Mh90eK6VofrtcgEU/edit");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
