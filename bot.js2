@@ -166,7 +166,7 @@ var HTTPS = require('https');
 	}
 	else if(request.text && botRegexRules.test(request.text)) {
 	this.res.writeHead(200);
-	postMessage("https://thenypost.files.wordpress.com/2017/05/170530-kathy-griffin-feature.jpg?quality=90&strip=all");
+	postMessage("http://daddyleagues.com/nl/rules");
 	this.res.end();
 	}
 	else if(request.text && botRegexGTA.test(request.text)) {
