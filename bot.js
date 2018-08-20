@@ -145,7 +145,7 @@ var HTTPS = require('https');
 	else if(request.text && botRegexDL.test(request.text)) {
 	this.res.writeHead(200);
 	//postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-	postMessage("http://daddyleagues.com/MNL18/team/"+request.text.substring(5,8)+"/depthchart");
+	postMessage("http://daddyleagues.com/MNL19/team/"+request.text.substring(5,8)+"/depthchart");
 	this.res.end();
 	}
 	
@@ -177,14 +177,14 @@ var HTTPS = require('https');
 	else if(request.text && botRegexSC.test(request.text)) {
 	this.res.writeHead(200);
 	
-	postMessage("http://daddyleagues.com/MNL18/team/"+request.text.substring(5,8)+"/schedule");
+	postMessage("http://daddyleagues.com/MNL19/team/"+request.text.substring(5,8)+"/schedule");
 	this.res.end();
 	}
 	else if(request.text && botRegexP.test(request.text)) {
 	this.res.writeHead(200);
 	var req = request.text.substring(5,request.text.length);
 	var rep = req.replace(/ /,"+");
-	postMessage("http://daddyleagues.com/MNL18/players?name="+rep+"&position=all&team=all");
+	postMessage("http://daddyleagues.com/MNL19/players?name="+rep+"&position=all&team=all");
 	
 	this.res.end();
 	}
